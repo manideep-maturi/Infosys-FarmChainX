@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* HERO SECTION = WALLPAPER */
+.hero {
+  min-height: 100vh;
+  background-image: url("../images/welcome.png"); /* YOUR IMAGE */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* DARK OVERLAY */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 0;
+}
+
+/* NAVBAR */
+.navbar {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  color: white;
+}
+
+/* NAV BUTTONS */
+.nav-buttons a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.nav-buttons .btn {
+  background: white;
+  color: #2e7d32;
+  padding: 6px 14px;
+  border-radius: 4px;
+}
+
+/* WELCOME TEXT */
+.welcome {
+  position: relative;
+  z-index: 1;
+  height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+}
+
+.welcome-text {
+  max-width: 520px;
+  color: white;
+}
+
+.welcome-text h1 {
+  font-size: 48px;
+}
+
+.welcome-text p {
+  font-size: 18px;
+  line-height: 1.6;
+}
